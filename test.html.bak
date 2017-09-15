@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/wzycss.css" />
+		<style>
+			@keyframes right{
+				0%{transform: rotate(0deg) scale(1);}
+				10%{transform: rotate(16deg) scale(0.8);}
+				20%{transform: rotate(22deg) scale(0.6);}
+				30%{transform: rotate(38deg) scale(0.4);}
+				40%{transform: rotate(44deg) scale(0.2);}
+				50%{transform: rotate(50deg) scale(0);}
+				60%{transform: rotate(66deg) scale(0.2);}
+				70%{transform: rotate(72deg) scale(0.4);}
+				80%{transform: rotate(58deg) scale(0.6);}
+				90%{transform: rotate(34deg) scale(0.8);}
+				100%{transform: rotate(10deg) scale(1);}
+			}
+			@keyframes up{
+				0%{bottom:90px;}
+				10%{bottom:96px;}
+				20%{bottom:124px;}
+				30%{bottom:153px;}
+				40%{bottom:191px;}
+				50%{bottom:231px;}
+				60%{bottom:269px;}
+				70%{bottom:307px;}
+				80%{bottom:325px;}
+				90%{bottom:327px;}
+				100%{bottom:330px;}
+			}
+			@keyframes move{
+				0%{left:64px;}
+				10%{left:128px;}
+				20%{left:200px;}
+				40%{left:254px;}
+				60%{left:320px;}
+				80%{left:382px;}
+				100%{left:450px;}
+			}
+			@keyframes move{
+				from{left:0px}to{left:500px}
+			}
+			*{margin: 0; padding: 0;}
+			body{
+				background: url(img/bg5.jpg) no-repeat;
+				background-size: 100% 100%;
+				width: 100%; height: 100vh;position:relative;z-index: 2;
+				overflow: hidden;
+			}
+			.bb{
+				width:80px;height:80px;position: absolute; left: 0; top: 0;
+			}
+			.r-12{
+				position: absolute; right: 80px; bottom: 10px;z-index: 3;
+				width:410px;height:400px;
+			}
+			.r-12 .a12up{
+				position:absolute; right: 130px; bottom: 90px;
+				animation: up 3s linear /*infinite */forwards  ;
+				animation-delay: 8.5s;z-index: 4;
+				width:100px;height:90px;
+			}
+			.r-12 .a12down{
+				width:400px;height:400px;
+			}
+			.move1{
+				width:384px;height:220px;
+				background:url(img/moveall1.gif) no-repeat ;
+				background-color: rgba(0.8);
+				position:absolute;  left:10px; bottom: 2px;
+				animation: move 5s linear forwards;
+				border-radius: 50px;
+				
+			}
+			.throw{
+				width:336px;height:260px;
+				position:absolute; left:550px; bottom: 2px;
+				background: url(img/thow1.gif) no-repeat;display:none;
+				
+			}
+			.liebin{
+				display:none;position:absolute; left:450px; bottom: -240px;
+				width:700px;height:700px;
+			}
+			.pre{
+				width:80px;height:80px;position: absolute;left:15px;bottom: 15px;
+			}
+			.pre img,.next img{
+				width:80px;height:80px;
+			}
+			.next{
+				width:80px;height:80px;position:absolute;right:15px;bottom: 15px;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<div class="r-12"> <!--国旗 底座-->
+			<img class="a12down" src="img/r-12down.gif" />
+			<img class="a12up" src="img/12a.gif" />
+		</div>
+		<div class="move1"></div>
+		<div class='throw'></div>
+		<img class="liebin" src="img/liedui3.gif" />
+		<div class="next">
+			<a href="http://127.0.0.1:8020/%E5%9B%BD%E5%BA%86/zyw.html"><img src="img/next.gif"/></a>
+		</div>
+		<div class="pre">
+			<a href="http://127.0.0.1:8020/%E5%9B%BD%E5%BA%86/index.html"><img src="img/pre.gif"/></a>
+		</div>
+		
+		
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+<script>
+//定义 烟花位置
+	var w = $(window).width();
+	for(var i = 0; i<15; i++){
+		var l = Math.random()*1000+100;
+		var t = Math.random()*200;
+		var o = Math.random()+0.1;
+		var a = Math.random()*6+2;
+		
+		$('body').append('<img class="bb" src="img/13.png">')<!-- 插入烟花 -->
+		$('.bb').eq(i).css({'left':l+'px',
+							'top':t+'px',
+							'opacity':o+'px',
+							'animation':'right '+a+'s linear infinite'
+		})
+	}
+//	阅兵行走
+   setTimeout(function(){
+   	$('.move1').css("display","none")
+   		$('.throw').css("display","block");
+   },5000)
+   
+//// 抛旗
+   setTimeout(function(){
+   	$('.throw').css("display","none");
+   	$('.liebin').css("display","block")
+   },8500);
+// 
+//   setTimeout(function(){
+//   	setTimeout(function(){
+// 	$('.throw').css("display","none");
+// },5000)
+//
+// },5000)
+   
+// 抛旗
+ 
+//</script>

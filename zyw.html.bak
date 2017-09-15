@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/photo.js"></script>
+
+		<style>
+		     *{
+		     	margin: 0;
+		     	padding: 0;
+		     }
+		     body{margin-top:100px;margin-left:600px;
+		     	background:url(img/aa.jpg) no-repeat; background-size:100%;position:relative;};
+		     }
+		     .box{
+		     	width: 200px;
+		     	height: 100px;
+		     	margin: 200px auto;
+		     	perspective: 1000px;
+		     	
+		     	
+		     }
+		     .box .tuhe{
+		     	width: 200px;
+		     	height: 200px;
+		     	position: relative;
+		     	transform-style: preserve-3d;
+		     	animation: zz 15s linear infinite;
+		     }
+		     .box .tuhe:hover{
+		     	transform: rotateY(-40deg)
+		     }
+		     .tuhe img{
+		     	width: 200px;
+		     	height: 100px;
+		     	position: absolute;
+		     	left: 0;
+		     	top: 0;border-radius: 10px;
+		     }
+		   
+		     .tuhe .imgq{
+		     	transform: rotateY(40deg) translateZ(400px);
+		     }
+		     .tuhe .imgw{
+		     	transform: rotateY(80deg) translateZ(400px);
+		     }
+		     .tuhe .imge{
+		     	transform: rotateY(120deg) translateZ(400px);
+		     }
+		     .tuhe .imgr{
+		     	transform: rotateY(160deg) translateZ(400px);
+		     }
+		     .tuhe .imgt{
+		     	transform: rotateY(200deg) translateZ(400px);
+		     }
+		     .tuhe .imgy{
+		     	transform: rotateY(240deg) translateZ(400px);
+		     }
+		     .tuhe .imgu{
+		     	transform: rotateY(280deg) translateZ(400px);
+		     }
+		     .tuhe .imgi{
+		     	transform: rotateY(320deg) translateZ(400px);
+		     }
+		     .tuhe .imgo{
+		     	transform: rotateY(360deg) translateZ(400px);
+		     }
+		     @keyframes zz{
+		     	from{
+		     		transform: rotatex(0deg);
+		     	}
+		     	to{
+		     		transform: rotatex(360deg);
+		     	}
+		     }
+			}
+			.pic-down ul li{
+				float: left; width: 70px; height: 70px; border: 5px solid gainsboro;
+			}
+			.pic-down ul li img{
+				width: 70px; height: 70px;
+			}
+			.pic-down ul li.on{
+				border: 5px solid red;
+			}
+			.next{
+				width:40px; height: 80px; background: darkgray; position: absolute;
+				right: 0; top: 0; font-size: 40px; line-height: 80px; color: red;
+				text-align: center;
+			}
+			.pre1{
+				width:80px;height:80px;position: fixed;left:15px;bottom: 15px;
+			}
+			.pre1 img,.next1 img{
+				width:80px;height:80px;
+			}
+			.next1{
+				width:80px;height:80px;position:fixed;right:15px;bottom: 15px;
+			}
+	</style>
+	</head>
+	<body>
+	    <div class="box">
+			<div class="tuhe">
+				<img class="imgq" src="img/b01.jpg" />
+				<img class="imgw" src="img/b02.jpg" />
+				<img class="imge" src="img/b03.jpg" />
+				<img class="imgr" src="img/a05.jpg" />
+				<img class="imgt" src="img/a06.jpg" />
+				<img class="imgy" src="img/a07.jpg" />
+				<img class="imgu" src="img/a09.jpg" />
+				<img class="imgi" src="img/a10.jpg" />
+				<img class="imgo" src="img/a08.jpg" />
+			</div>
+		</div> 
+		<div class="box">
+			<div class="tuhe">
+				<img class="imgq" src="img/a08.jpg" />
+				<img class="imgw" src="img/a07.jpg" />
+				<img class="imge" src="img/a06.jpg" />
+				<img class="imgr" src="img/a09.jpg" />
+				<img class="imgt" src="img/a10.jpg" />
+				<img class="imgy" src="img/a05.jpg" />
+				<img class="imgu" src="img/a07.jpg" />
+				<img class="imgi" src="img/b02.jpg" />
+				<img class="imgo" src="img/b01.jpg" />
+			</div>
+		</div> 
+		<div class="box">
+			<div class="tuhe">
+				<img class="imgq" src="img/b01.jpg" />
+				<img class="imgw" src="img/b02.jpg" />
+				<img class="imge" src="img/b03.jpg" />
+				<img class="imgr" src="img/a08.jpg" />
+				<img class="imgt" src="img/a07.jpg" />
+				<img class="imgy" src="img/a09.jpg" />
+				<img class="imgu" src="img/a05.jpg" />
+				<img class="imgi" src="img/a08.jpg" />
+				<img class="imgo" src="img/a10.jpg" />
+			</div>
+		</div> 
+		<!--<div class="box2">
+			<div class="pic-big">
+				<img src="img/c.jpg">
+			</div>
+			<div class="pic-down">
+				<a href="javascript:" class="pre">&lt;</a>
+				<a href="javascript:" class="next">&gt;</a>
+				<div class="pic-md">
+					<ul>
+						<li class="on"><img src="img/a.jpg"></li>
+						<li><img src="img/b.jpg"></li>
+						<li><img src="img/c.jpg"></li>
+						<li><img src="img/d.jpg"></li>
+						<li><img src="img/e.jpg"></li>
+						<li><img src="img/f.jpg"></li>
+						<li><img src="img/g.jpg"></li>
+						<li><img src="img/x.jpg"></li>
+						<li><img src="img/o.jpg"></li>
+						<li><img src="img/p.jpg"></li>
+						<li><img src="img/m.jpg"></li>
+						<li><img src="img/n.jpg"></li>
+						<li><img src="img/o.jpg"></li>
+						<li><img src="img/p.jpg"></li>
+						<li><img src="img/m.jpg"></li>
+						<li><img src="img/n.jpg"></li>
+						<li><img src="img/o.jpg"></li>
+						<li><img src="img/p.jpg"></li>
+						<li><img src="img/m.jpg"></li>
+						<li><img src="img/n.jpg"></li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>-->
+		<div class="next1">
+			<a href="index.html"><img src="img/next.gif"/></a>
+		</div>
+		<div class="pre1">
+			<a href="http://127.0.0.1:8020/%E5%9B%BD%E5%BA%86/test.html"><img src="img/pre.gif"/></a>
+		</div>
+	</body>
+</html>
+<script>
+	var a = 0
+	$(window)mousewheel(function(e,detail){
+		a+=40*detail
+	})
+</script>
+

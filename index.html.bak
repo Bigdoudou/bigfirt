@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/cs.css" />
+	</head>
+	<body>
+		<div class="a-box">
+			<div class="txt-box">
+			  <!--<div class="txt-box-1">-->
+			  	<span>庆</span>
+				<span>祝</span>
+				<span>中</span>
+				<span>华</span>
+				<span>人</span>
+				<span>民</span>
+				<span>共</span>
+				<span>和</span>
+				<span>国</span>
+				<span>成</span>
+				<span>立</span>
+				<span class="act">68</span>
+				<span class="act">周</span>
+				<span class="act">年</span>
+			  <!--</div>-->
+				
+			</div>
+			<div class="lb">
+				<ul>
+					<li><a href="javascript:"><img src="images/aa.jpg"/></a></li>
+					<li><a href="javascript:"><img src="images/mm.jpg"/></a></li>
+					<li><a href="javascript:"><img src="images/wqe.jpg"/></a></li>
+					<li><a href="javascript:"><img src="images/xx_02.png"/></a></li>
+				</ul>
+				<div class="num">
+					<span class="active">1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>	
+				</div>
+			</div>
+			<div class="ccc">
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+				<img src="images/denglong.gif" />
+			</div>
+			<div class="aaa">
+				<a href="javascript:" class="pre">&lt;</a>
+				<a href="javascript:" class="next">&gt;</a>
+				<div class="photo">
+					<ul>
+						<li><a href="javascript:"><img src="images/a.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/b.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/c.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/d.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/d.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/e.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/f.jpg"></a></li>
+						<li><a href="javascript:"><img src="images/h.jpg"></a></li>
+						
+					</ul>
+				</div>
+			</div>	
+			<div class="next1">
+			<a href="http://127.0.0.1:8020/%E5%9B%BD%E5%BA%86/test.html"><img src="img/next.gif"/></a>
+		</div>
+		<div class="pre1">
+			<a href="http://127.0.0.1:8020/%E5%9B%BD%E5%BA%86/zyw.html"><img src="img/pre.gif"/></a>
+		</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/myjs.js"></script>
